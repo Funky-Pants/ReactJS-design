@@ -1,0 +1,27 @@
+// Required
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+@import "./variables";
+
+// Import custom font from Google
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic');
+
+//Font Awesome
+@import "~font-awesome/scss/font-awesome";
+
+// Load Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+@import "components/header";
+@import "components/global";
+@import "components/promo-banner";
+@import "components/partners";
+@import "components/authentication-buttons";
+@import "components/sport-banner";
+@import "components/popular";
+@import "components/promotions";
+@import "components/game-providers";
+@import "components/footer";
+@import "components/footer2";

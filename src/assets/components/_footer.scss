@@ -1,0 +1,58 @@
+.footer-1{
+    .sportsbet-info{
+        color: $color-gray;
+        font-size: $font-size-sm;
+    }
+    h3 {
+        font-size: $font-size-md;  
+        color: $color-light;
+            a{
+            margin-block-start: 0;
+            -webkit-transition: all 0.1s ease-in-out;
+            -moz-transition: all 0.1s ease-in-out;
+            -o-transition: all 0.1s ease-in-out;
+            transition: all 0.1s ease-in-out; 
+            &:hover{
+                color: $color-sb-green;
+            }
+        }
+    }
+    .footer-links{
+        li{
+            a{
+                color: $color-gray;
+                font-size: $font-size-md;
+                &:hover{
+                    color: $color-sb-green;
+                }
+            }
+        }
+    }
+    .social-links{
+        .item-socials{
+            display: inline-block; 
+            width: 40px;
+            height: 40px;
+            background: #31373f;
+            border-radius: 50%;
+            border: 1px solid#31373f;
+            text-align: center;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            &:hover{
+                border: 1px solid $color-sb-green;
+            }
+            img{
+                max-width: 20px;
+                max-height: 20px;
+                vertical-align: middle;
+            }
+            +.item-socials{
+                margin-left: $grid-gutter-width/2;
+            }
+
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.footer2-content{
+    margin-bottom: 20px;
+    .footer2-banner{
+    text-align: center;
+    vertical-align: middle!important;
+    +.footer2-banner{
+        margin-left: $grid-gutter-width*3!important;
+    }}
+    .img-footer2{
+        width: 50px;
+    }
+}
+@media only screen and (max-width: 960px){
+    .footer2-content{
+        margin-bottom: 60px;
+    }
+}

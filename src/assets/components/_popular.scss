@@ -1,0 +1,10 @@
+.popular-banner{
+    border-radius: $border-radius-xxlg;
+    width: 300px;
+    .img-popular{
+        border-radius: 25%;
+        +.popular-title{
+            margin-left: $grid-gutter-width;
+        }
+    }
+}

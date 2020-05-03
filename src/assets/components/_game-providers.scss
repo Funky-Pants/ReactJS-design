@@ -1,0 +1,12 @@
+.game-provider-banner{
+    background: $color-light;
+    height: 60px;
+    width: 200px;
+    border-radius: $border-radius-xlg;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    .img-game-provider{
+        vertical-align: middle;
+    }
+}

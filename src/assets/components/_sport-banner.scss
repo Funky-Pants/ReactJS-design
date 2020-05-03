@@ -1,0 +1,24 @@
+.sport-content{
+    .sport-banner{
+        width: 60px;
+        .img-sport-container{
+            height: 60px;
+            background-color: $color-dark;
+            border-radius: $border-radius-xxlg;
+            margin: 0.5rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .img-sport{
+                width: 30px;
+            }
+        }
+        a{
+            color: $color-gray;
+            font-size: $font-size-sm;
+            &:hover{
+                color: $color-light;
+            }
+        }
+    }
+}

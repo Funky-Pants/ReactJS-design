@@ -1,0 +1,57 @@
+.promo-banner {
+    border-radius: $border-radius-xxlg;
+    position: relative;
+    box-shadow: $card-box-shadow;
+
+    + .promo-banner {
+        margin-left: $grid-gutter-width;
+    }
+    .banner-info {
+        position: absolute;
+        padding: 2rem;
+        height: 100%;
+        width: 50%;
+    }
+
+    .promo-title {
+        text-transform: uppercase;
+        font-size: $font-size-xlg;
+        font-weight: $font-weight-bold;
+        color: $color-light;
+    }
+
+    .promo-description {
+        color: $color-gray;
+        font-size: $font-size-md;
+    }
+
+    .promo-button{
+        background: #0cd664;
+        color: $color-light;
+        transition: none;
+        width: 10rem;
+        &:hover{
+            background: #02ff70;
+        }
+    }
+
+}
+@media only screen and (max-width: 990px){
+    .promo-banner{
+        flex: none;
+        height: 200px;
+        .img-fluid{
+            height: 200px;
+            position: absolute;
+            right: 0;
+        }
+        .banner-info{
+            width: 100%;
+            z-index:9999;
+        }
+        +.promo-banner{
+            margin-left: 0;
+            margin-top: $grid-gutter-width;
+        }
+    }
+}

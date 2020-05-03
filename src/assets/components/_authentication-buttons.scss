@@ -1,0 +1,45 @@
+.authentication-buttons, .mobile-authentication{
+    a{
+        transition: none;
+        padding: 8px 40px;
+        font-weight: $font-weight-bold;
+        &.btn-sign-in{
+            color: $color-gray;
+            background: #31373f;
+            &:hover{
+                color:$color-light;
+            }
+            +.btn-regiser{
+                margin-left: $grid-gutter-width;
+            }
+        }
+        &.btn-regiser{
+            background: #0cd664;
+            color: $color-light;
+            &:hover{
+                background: #02ff70;
+            }
+        }
+    }
+}
+.mobile-authentication{
+    background: $color-dark;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    display: none;
+    .btn-sign-in, .btn-regiser{
+        width: 100%;
+    }
+
+}
+@media only screen and (max-width: 960px){
+    .authentication-dekstop{
+        display: none;
+    }
+    .mobile-authentication{
+        display: inline-flex;
+    }
+}

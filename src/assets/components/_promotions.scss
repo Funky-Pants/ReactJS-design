@@ -1,0 +1,50 @@
+.promotions-banner{
+    background: $color-dark;
+    border-radius: $border-radius-xxlg;
+    width: 590px;
+    .promotions-desc-container{
+        float: left;
+        width: 50%;
+        .promotions-title{
+            padding: 35px 30px 0;
+        }
+        .promotions-desc{
+            color: $color-gray;
+            font-size: $font-size-md;
+            padding: 10px 30px 0;
+        }
+    }
+    .promotions-img-container{
+        width: 48%;
+        overflow-x: hidden;
+        float: right;
+        border-top-right-radius: $border-radius-xxlg;
+        border-bottom-right-radius: $border-radius-xxlg;    
+        .img-promotions{
+            height: 225px;
+            margin-left: -140px;
+        }
+    }
+}
+
+@media only screen and (max-width: 760px){
+    .promotions-banner{
+        width: 350px;
+        height: 330px;
+        .promotions-img-container{
+            float: none;
+            width: 100%;      
+            border-top-left-radius: $border-radius-xxlg;      
+            border-bottom-right-radius: none;    
+            .img-promotions{
+                height: auto;
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+        .promotions-desc-container{
+            float: none;
+            width: 100%;
+        }
+    }
+}
